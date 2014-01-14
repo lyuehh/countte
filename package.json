@@ -1,0 +1,30 @@
+{
+  "name": "count",
+  "version": "0.0.0",
+  "main": "lib/count.js",
+  "description": "command line utility for statistics on numbers",
+  "homepage": "https://github.com/lyuehh/count",
+  "bugs": "https://github.com/lyuehh/count/issues",
+  "author": {
+    "name": "lyuehh",
+    "email": "lyuehh@gmail.com",
+    "url": "http://lyuehh.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyuehh/count"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.7.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.0",
+    "load-grunt-tasks": "~0.2.0",
+    "time-grunt": "~0.2.0",
+    "jshint-stylish": "~0.1.3"
+  }
+}
