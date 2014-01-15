@@ -1,6 +1,6 @@
 {
   "name": "count",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "lib/count.js",
   "description": "command line utility for statistics on numbers",
   "homepage": "https://github.com/lyuehh/count",
@@ -19,6 +19,12 @@
       "type": "MIT"
     }
   ],
+  "scripts": {
+    "test": "grunt"
+  },
+  "bin": {
+    "count": "./bin/cli.js"
+  },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
     "grunt-contrib-nodeunit": "~0.2.0",
