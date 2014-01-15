@@ -27,10 +27,40 @@ exports.count = {
     // setup here
     done();
   },
-  'no args': function(test) {
-    test.expect(1);
-    // tests here
-    test.equal(count.awesome(), 'awesome', 'should be awesome.');
+  'all integer': function(test) {
+    test.expect(5);
+
+    var str = "1\n2\n3\n";
+    var obj = count.run(str);
+    test.equal(obj.count, 3, 'should be 3.');
+    test.equal(obj.sum, 6, 'should be 6.');
+    test.equal(obj.avg, 2, 'should be 2.');
+    test.equal(obj.min, 1, 'should be 1.');
+    test.equal(obj.max, 3, 'should be 3.');
+    test.done();
+  },
+  'with float': function(test) {
+    test.expect(5);
+
+    var str = '1.1\n2.2\n3.3';
+    var obj = count.run(str);
+    test.equal(obj.count, 3, 'should be 3.');
+    test.equal(obj.sum, 6.6, 'should be 6.6.');
+    test.equal(obj.avg, 2.1999999999999997, 'should be 2.1999999999999997.');
+    test.equal(obj.min, 1.1, 'should be 1.1');
+    test.equal(obj.max, 3.3, 'should be 3.3');
+    test.done();
+  },
+  'with string': function(test) {
+    test.expect(5);
+
+    var str = '1.1\n2.2\n3.3\naa\nbb';
+    var obj = count.run(str);
+    test.equal(obj.count, 3, 'should be 3.');
+    test.equal(obj.sum, 6.6, 'should be 6.6.');
+    test.equal(obj.avg, 2.1999999999999997, 'should be 2.1999999999999997.');
+    test.equal(obj.min, 1.1, 'should be 1.1');
+    test.equal(obj.max, 3.3, 'should be 3.3');
     test.done();
   }
 };

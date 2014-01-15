@@ -1,26 +1,29 @@
 # count [![Build Status](https://secure.travis-ci.org/lyuehh/count.png?branch=master)](http://travis-ci.org/lyuehh/count)
 
-command line utility for statistics on numbers
+Command line utility for statistics on numbers.
 
 ## Getting Started
-Install the module with: `npm install count`
-
-```javascript
-var count = require('count');
-count.awesome(); // "awesome"
-```
-
-## Documentation
-_(Coming soon)_
+Install : `npm install count -g`
 
 ## Examples
-_(Coming soon)_
+
+```
+seq 1 10 | count
+```
+
+```
+count : 10
+sum   : 55
+avg   : 5.5
+min   : 1
+max   : 10
+```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+* 2014-01-15 init
 
 ## License
 Copyright (c) 2014 lyuehh. Licensed under the MIT license.
