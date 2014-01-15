@@ -1,5 +1,5 @@
 {
-  "name": "count",
+  "name": "countte",
   "version": "0.0.1",
   "main": "lib/count.js",
   "description": "command line utility for statistics on numbers",
@@ -23,7 +23,7 @@
     "test": "grunt"
   },
   "bin": {
-    "count": "./bin/cli.js"
+    "countte": "./bin/cli.js"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",

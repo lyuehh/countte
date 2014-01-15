@@ -1,14 +1,14 @@
-# count [![Build Status](https://secure.travis-ci.org/lyuehh/count.png?branch=master)](http://travis-ci.org/lyuehh/count)
+# countte [![Build Status](https://secure.travis-ci.org/lyuehh/countte.png?branch=master)](http://travis-ci.org/lyuehh/countte)
 
 Command line utility for statistics on numbers.
 
 ## Getting Started
-Install : `npm install count -g`
+Install : `npm install countte -g`
 
 ## Examples
 
 ```
-seq 1 10 | count
+seq 1 10 | countte
 ```
 
 ```
